@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Home Control</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="images/user.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+	<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase.js"></script>
+	<script type="text/javascript" src="js/fire.js"></script>
+  </head>
+  <body>
+	
+	<div class='loader' id='pan_load'>
+	  <div class='load'></div>
+	</div>
+	
+	<div class="header">
+	  <h>Good Day Chocho,</h>
+	  <h>Take Control</h>
+	  <img class="user-icon" src="images/user.png" alt="user-icon" oncontextmenu="return false;">
+	</div>
+	
+	<div class="main-pan">
+	  
+	  <div class="control-pan" id="control_pan" >
+		<!--
+		<card class='passive' id="card_one">
+		  <h>off</h>
+		  <i class="fa fa-lightbulb-o"></i>
+		  <h>Lights</h>
+		  <label class="switch">
+			<input type="checkbox" id="check_one">
+			<span class="slider"></span>
+		  </label>
+		</card>
+		
+	   <card class='passive' id="card_two">
+		  <h>on</h>
+		  <i class="fa fa-lightbulb-o"></i>
+		  <h>Lights</h>
+		  <label class="switch">
+			<input type="checkbox" id="check_two">
+			<span class="slider"></span>
+		  </label>
+		</card>-->
+	  </div>
+	  
+	  <div class="second-pan">
+		<span class="result" id="output">Tap mic to speak !</span>
+		<i class="fa fa-microphone" id="mic" onclick="speak()"></i>
+	  </div>
+	  
+	</div>
+	<script type="text/javascript" src="js/scripts.js"></script>
+  </body>
+</html>		
